@@ -1,6 +1,6 @@
-mixin sponsor( img )
+mixin sponsor( img, url )
   // Sponsor
-  a.sponsor( href='#' data-triangle=".sponsor-overlay" )&attributes( attributes )
+  a.sponsor( href=url data-triangle=".sponsor-overlay" target="_blank")&attributes( attributes )
     .sponsor-overlay
     .sponsor-img: +img(`${img}.png`)
 

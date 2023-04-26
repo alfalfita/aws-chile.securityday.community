@@ -23,7 +23,7 @@ block page
       .block-lg.block-center
         h6 Falta poco
         h3 VEN Y SÚMATE
-        p Este evento es organizado por las comunidades de AWS Girls Chile, AWS User Group Chile y también por AWS Security Community
+        p Este evento es organizado por las comunidades de AWS Girls Chile, AWS User Group Chile en colaboración con AWS Security Community
         +img('logos-comunidades')
         +countdown-rect( {to: '2023-07-01'} )
 
@@ -34,7 +34,13 @@ block page
         .col-md-10.col-lg-6.col-xl-5
           h6 Sobre el evento
           h3.heading-lg-postfix-15 ¿QUÉ SIGNIFICA ESTE EVENTO?
-          p AWS COMMUNITY DAY SECURITY EDITION ES UN EVENTO PRESENCIAL QUE LLEVA EL MENSAJE DE SEGURIDAD A LOS CLIENTES DE LA REGIÓN
+          //- p.text-justify AWS COMMUNITY DAY SECURITY EDITION es un evento presencial que lleva el mensaje de seguridad en nube a los clientes de la región de latinoamérica
+
+          p.text-justify 
+            b AWS COMMUNITY DAY SECURITY EDITION
+            |  es un evento presencial que lleva el 
+            u mensaje de seguridad
+            |  en nube a los clientes de la regi&oacute;n de latinoam&eacute;rica
           // List Inline
           ul.list-inline.list-inline-xl
             li
@@ -49,8 +55,8 @@ block page
                 .unit-body
                   h5 ¿Cúando?
                   p: time(datetime='2019-01-05') 1 Julio 2023
-          a.button.button-primary(href='#' data-triangle=".button-overlay" )
-            span REGÍSTRATE AQUÍ
+          a.button.button-primary(href='https://www.eventbrite.com/e/aws-security-community-day-chile-tickets-622605548957' data-triangle=".button-overlay" target='_blank')
+            span REGISTRO FREE
             span.button-overlay
         .col-md-10.col-lg-6.col-xl-7.text-md-right
           // Image Box
@@ -76,7 +82,7 @@ block page
             +speaker({
               img:      'gera_castro',
               title:    'Gerardo Castro',
-              position: 'Security Solutions Architect - Caleidos',
+              position: ' AWS Community Builder',
               linkedin: 'https://www.linkedin.com/in/gerardokaztro/'
             })      
         .col-md-6.col-lg-4
@@ -90,10 +96,73 @@ block page
         .col-md-6.col-lg-4
           div
             +speaker({
-              img:      'dario_goldfarb',
-              title:    'Dario Goldfarb',
-              position: 'Principal Security Solutions - Architect at Amazon Web Services (AWS)',
-              linkedin: 'https://www.linkedin.com/in/dariolucas/'
+              img:      'fernando_castillo',
+              title:    'Fernando Castillo',
+              position: 'Software Engineer',
+              linkedin: 'https://www.linkedin.com/in/fecastillo/'
+            })
+        .col-md-6.col-lg-4
+          div
+            +speaker({
+              img:      'odina_jacobs',
+              title:    'Odina Jacobs',
+              position: 'DevOps Engineer',
+              linkedin: 'https://www.linkedin.com/in/odinajacobs/'
+            })
+        .col-md-6.col-lg-4
+          div
+            +speaker({
+              img:      'ysabel_troconis',
+              title:    'Ysabel Troconis',
+              position: 'Cloud Support Engineer',
+              linkedin: 'https://www.linkedin.com/in/ysabeltroconisit/'
+            })
+        .col-md-6.col-lg-4
+          div
+            +speaker({
+              img:      'michelle_melean',
+              title:    'Michelle Meleán',
+              position: 'Telecommunications Engineer',
+              linkedin: 'https://www.linkedin.com/in/michellejmm/'
+            })
+        .col-md-6.col-lg-4
+          div
+            +speaker({
+              img:      'diana_alfaro',
+              title:    'Diana Alfaro',
+              position: 'AWS Community Builder',
+              linkedin: 'https://www.linkedin.com/in/dianaalfarobazan/'
+            })
+      //- a.button.button-secondary.box-with-triangle-right.wow.fadeScale( href='speakers.html' data-triangle=".button-overlay" )
+      //-   span View all speakers
+      //-   span.button-overlay
+
+
+
+  // Section Who Is Speaking
+  +parallax({
+    img:        'bg-parallax-02-1894x1950.jpg',
+    innerClass: 'section-lg context-dark text-center'
+  }).section( id= 'soporte')
+    .container
+      h6.text-secondary Nuestro
+      h3 Equipo soporte
+      .row.row-30
+        .col-md-6.col-lg-4
+          div
+            +speaker({
+              img:      'eli_fuentes',
+              title:    'Elizabeth Fuentes',
+              position: 'Developer Relations team at AWS',
+              linkedin: 'https://www.linkedin.com/in/lizfue'
+            })
+        .col-md-6.col-lg-4
+          div
+            +speaker({
+              img:      'nelly_andrade',
+              title:    'Nelly Andrade',
+              position: 'LATAM Sr Community Programs Manager  at AWS',
+              linkedin: 'https://www.linkedin.com/in/patyandradediaz'
             })
         .col-md-6.col-lg-4
           div
@@ -106,20 +175,31 @@ block page
         .col-md-6.col-lg-4
           div
             +speaker({
-              img:      'speaker-05-330x354',
-              title:    'Sarah Rose',
-              position: 'Designer'
+              img:      'dario_goldfarb',
+              title:    'Dario Goldfarb',
+              position: 'Principal Security Solutions - Architect at AWS',
+              linkedin: 'https://www.linkedin.com/in/dariolucas/'
             })
         .col-md-6.col-lg-4
           div
             +speaker({
-              img:      'speaker-06-330x354',
-              title:    'John Smith',
-              position: 'Assistant'
+              img:      'arturo_martinez',
+              title:    'Arturo Martínez',
+              position: 'Senior Partner Trainer at AWS',
+              linkedin: 'https://www.linkedin.com/in/arturomartinezv'
+            })
+        .col-md-6.col-lg-4
+          div
+            +speaker({
+              img:      'jose_yapur',
+              title:    'José Yapur',
+              position: 'Sr. Developer Advocate at AWS',
+              linkedin: 'https://www.linkedin.com/in/joseyapur/'
             })
       //- a.button.button-secondary.box-with-triangle-right.wow.fadeScale( href='speakers.html' data-triangle=".button-overlay" )
       //-   span View all speakers
       //-   span.button-overlay
+
 
   // Section Conference Schedule
   //- section.section.section-lg.bg-default.text-center
@@ -247,10 +327,9 @@ block page
   //-     h3 Photo Gallery.
 
        // Section Full Width Gallery
-  section.section.section-lg.bg-default.text-center
+  section.section.section-lg.bg-yellow.text-center
     .container-fluid
-      h4.font-weight-bold 
-      //- Full Width Gallery.
+      h3 Eventos pasados
       .row.row-narrow-xs.row-10( data-lightgallery="group" )
         .col-lg-6
           +thumbnail-big({
@@ -330,15 +409,19 @@ block page
 
   // Section Official Sponsors
   +parallax({
-    img:        'bg-parallax-04-1894x1170.jpg',
-    innerClass: 'section-lg context-dark text-center'
+    img:        'bg-parallax-04.jpg',
+    innerClass: 'section-lg text-center'
   }).section( id= 'sponsors')
     .container
       h6 Nuestros
       h3 Sponsors
       .row.row-30.row-lg-50.justify-content-center
         .col-sm-12.col-lg-3
-          .wow: div: +sponsor( 'sponsor-01' )
+          .wow: div: +sponsor( 'sponsor-03', 'https://aws.amazon.com/' )
+        .col-sm-12.col-lg-3
+          .wow: div: +sponsor( 'sponsor-01', 'https://www.duoc.cl/' )
+        .col-sm-12.col-lg-3
+          .wow: div: +sponsor( 'sponsor-02', 'hhttps://www.cloudhesivelatam.com/' )
           //- .wow: div: +sponsor( 'sponsor-01-117x70' )
         //- .col-sm-5.col-lg-3
           //- .wow: div: +sponsor( 'sponsor-02-66x83' )
@@ -352,6 +435,15 @@ block page
         //-     =" "
         //-     a.link-inline.wow.fadeScale( href='#' ) View All Sponsors
 
+  // Section Become a sponsor
+  section.section.section-lg.bg-be-sponsor.text-center( id= 'BeSponsor')
+    .container
+      .block-lg.block-center
+        h6 Be sponsor
+        h2 ÚNETE Y PARTICIPA CON NOSOTROS
+        a.button.button-lg.button-primary.button-offset-xl( href='images/brochure_contacto_jossy.pdf' target='_blank' data-triangle=".button-overlay" )
+          span Become a sponsor
+          span.button-overlay
   // News & Articles.
   //- include ../sections/_section-new-and-articles
 

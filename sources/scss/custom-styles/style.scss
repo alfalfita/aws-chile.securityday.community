@@ -146,3 +146,35 @@
 @import 'plugins/slick';
 @import 'plugins/parallax-js';
 @import 'plugins/waves';
+
+@media (min-width: 992px) {
+  .button.button-primary.banner {
+    display: none;
+    visibility: hidden;
+  }
+  .video-link-wrapper {
+    // display: block;
+    visibility: visible;
+  }
+}
+
+@media (max-width: 991px) {
+  .button.button-primary.banner {
+    // display: block;
+    visibility: visible;
+  }
+  .video-link-wrapper {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.bg-yellow{
+  background-image: url("../images/bg-parallax-04-1894x1170.jpg");
+}
+
+.bg-be-sponsor{
+  background: #f6f7fd;
+}
+
+a:hover { color: #f09922 !important}
