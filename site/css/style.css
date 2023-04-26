@@ -8991,7 +8991,7 @@ button.swiper-pagination-bullet {
 @media (min-width: 1200px) {
   .section-swiper-absoulte .section-swiper-content-sm {
     padding-top: 350px;
-    padding-bottom: 210px;
+    padding-bottom: 210px; 
   }
 }
 
